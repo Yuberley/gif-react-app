@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOMClient from 'react-dom/client';
-import GifExpertApp from './GifExpertApp';
+import {GifExpertApp} from './GifExpertApp';
 // import ReactDOM from 'react-dom';
 import './index.css';
 

@@ -1,23 +1,25 @@
 import React, { useState } from 'react';
-import AddCategory from './components/AddCategory';
+import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
-const GifExpertApp = () => {
+export const GifExpertApp = () => {
 
-    const [ categories, setCategories ] = useState(['One']);
+    const [categories, setCategories] = useState(['Halo']);
+    const [limit, setLimit] = useState('10');
 
-    return(
+    return (
         <>
             <h2>Gif Expert App</h2>
-            <AddCategory setCategories={ setCategories } />
+            <AddCategory setCategories={ setCategories } categories={ categories } setLimit={ setLimit }/>
             <hr />
-            
+
             <ol>
-                { 
+                {
                     categories.map( category => (
-                        <GifGrid 
-                        key={ category }
-                        category={ category } 
+                        <GifGrid
+                            key={ category }
+                            category={ category }
+                            limit={ limit }
                         />
                     ))
                 }
@@ -26,9 +28,4 @@ const GifExpertApp = () => {
         </>
     );
 
-}
-
-
-export {
-    GifExpertApp as default
 }
