@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { AddCategory } from './components/AddCategory';
+import { AddTags } from './components/AddTags';
 import { GifGrid } from './components/GifGrid';
 
 export const GifExpertApp = () => {
@@ -9,8 +10,20 @@ export const GifExpertApp = () => {
 
     return (
         <>
-            <h2>Gif React App</h2>
+            <div className="title-logo">
+                <img className="logo" src="./logo192.png"></img>
+                <h2 className="title">Gif React App</h2>
+            </div>
             <AddCategory setCategories={ setCategories } categories={ categories } setLimit={ setLimit }/>
+            <hr />
+                { 
+                    categories.map( category => (
+                        <AddTags 
+                            key={ category } 
+                            category={ category } 
+                        />
+                    ))
+                }
             <hr />
 
             <ol>

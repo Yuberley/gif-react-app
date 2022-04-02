@@ -40,11 +40,12 @@ export const AddCategory = ({ setCategories, categories, setLimit }) => {
 							value={ inputValue }
 							onChange={ handleAddInputChange }
 						/>
+							
 					</div>
 					<div className="col-lg-2 col-sm-12"></div>
 					<div className="col-lg-1 col-sm-6">Quantity</div>
 					<div className="col-lg-1 col-sm-6">
-						<select name="select" className="form-select" aria-label="Default select example" onChange={ handleAddILimitChange }>
+						<select name="select" className="form-select form-select-sm" aria-label="Default select example" onChange={ handleAddILimitChange }>
 							<option value="10" default>10</option>
 							<option value="20">20</option>
 							<option value="50">50</option>

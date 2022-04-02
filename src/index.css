@@ -9,8 +9,24 @@ body {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.3rem;
 }
-body h2 {
+
+.logo-title {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.title {
+  padding-bottom: 20px;
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.logo {
   padding-bottom: 30px;
+  width: 40px;
+  margin-right: 10px;
 }
 
 body h3 {
