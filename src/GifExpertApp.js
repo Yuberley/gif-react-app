@@ -9,7 +9,7 @@ export const GifExpertApp = () => {
 
     return (
         <>
-            <h2>Gif Expert App</h2>
+            <h2>Gif React App</h2>
             <AddCategory setCategories={ setCategories } categories={ categories } setLimit={ setLimit }/>
             <hr />
 
