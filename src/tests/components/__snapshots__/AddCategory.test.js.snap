@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test on component <AddCategory /> should show the component successfully 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="container-fluid"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-lg-8 col-sm-12"
+      >
+        <input
+          onChange={[Function]}
+          placeholder=" Search"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="col-lg-2 col-sm-12"
+      />
+      <div
+        className="col-lg-1 col-sm-6"
+      >
+        Quantity
+      </div>
+      <div
+        className="col-lg-1 col-sm-6"
+      >
+        <select
+          aria-label="Default select example"
+          className="form-select form-select-sm"
+          name="select"
+          onChange={[Function]}
+        >
+          <option
+            default={true}
+            value="10"
+          >
+            10
+          </option>
+          <option
+            value="20"
+          >
+            20
+          </option>
+          <option
+            value="50"
+          >
+            50
+          </option>
+          <option
+            value="100"
+          >
+            100
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+</form>
+`;
