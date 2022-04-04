@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test on <GifGrid /> should show the component successfully 1`] = `
+<Fragment>
+  <h3
+    className="text-capitalize"
+  >
+    test
+     
+    <small
+      className="text-muted"
+    >
+      Not found
+    </small>
+  </h3>
+  <div
+    className="d-flex align-items-center"
+  >
+    <strong>
+      Loading...
+    </strong>
+    <div
+      aria-hidden="true"
+      className="spinner-border ms-auto"
+      role="status"
+    />
+  </div>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;
